@@ -99,6 +99,8 @@ public class FormController : ControllerBase
                     field.SetValue(pair.Value, font, !autoSizeFields.Contains(pair.Key) ? 11f : 0);
                 }
 
+                pdfForm.FlattenFields();
+
                 pdfDoc.Close();
 
                 return File(outputStream.ToArray(), "application/pdf");
