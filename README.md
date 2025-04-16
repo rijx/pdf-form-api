@@ -11,10 +11,11 @@ The PDF Form API allows you to:
 
 This API is useful for automating form filling processes or building applications that need to interact with PDF forms.
 
-## Requirements
+## Run using Docker
 
-- .NET 6.0 or later
-- iText 7 for PDF manipulation
+```
+docker run --rm -p 5162:80 ghcr.io/rijx/pdf-form-api
+```
 
 ## Run locally
 
